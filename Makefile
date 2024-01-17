@@ -1,6 +1,6 @@
 # Docker-related variables
-IMAGE = testimage
-CONTAINER = testcontainer
+IMAGE = nginximage
+CONTAINER = nginxcontainer
 
 go: build run start
 
