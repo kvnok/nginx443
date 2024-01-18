@@ -9,7 +9,7 @@ RUN mkdir /etc/nginx/ssl
 
 # Generate a self-signed SSL/TLS certificate
 RUN openssl req -x509 -nodes -out /etc/nginx/ssl/inception.pem -keyout /etc/nginx/ssl/inception.key \
-    -subj "/C=NL/ST=Noord-Holland/L=Amsterdam/O=42/OU=kkroon/CN=kkroon/"
+    -subj "/C=NL/ST=Noord-Holland/L=Amsterdam/O=42/OU=Codam/CN=kkroon/"
 
 # Copy your index.html file to the NGINX HTML directory
 COPY index.html /usr/share/nginx/html/
